@@ -16,6 +16,7 @@ Recipes
 - `database`
 
 	Setup and install mysql server. It also create database but not tables.
+	It also create a separate user for database with just enough privileges. One should use it, in place of `root` user.
 
 	Reason: Tables should be part of migration and one should not allow manual table creations
 
@@ -45,6 +46,9 @@ Run integration testing
 
 How-to-use
 -------------
+
+Write wrapper cookbook or create roles.
+
 
 Create role with following content:
 
